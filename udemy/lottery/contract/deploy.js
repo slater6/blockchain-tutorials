@@ -19,7 +19,7 @@ const deploy = async () => {
         data: "0x" + bytecode
       })
       .send({ from: accounts[0] });
-
+    console.log("Interface:", interface);
     console.log("Contract deployed to", result.options.address);
   } catch (error) {
     console.log(error);
